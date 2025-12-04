@@ -54,39 +54,6 @@ Issue: Absorbed the wick noise and captured real movement
 
 ---
 
-## 🔬 Statistical Analysis
-
-### Win Rate Comparison
-
-| Expiry Type | Sample Size | Wins | Losses | Win Rate | Statistical Edge |
-|-------------|-------------|------|--------|----------|------------------|
-| 1-Minute (1C) | 1000 trades | 485 | 515 | 48.5% | ❌ None (-1.5%) |
-| 3-Minute (3C) | 1000 trades | 632 | 368 | 63.2% | ✅ Strong (+13.2%) |
-
-### Expected Value Analysis
-
-**Payout:** 80% (standard binary options)
-
-**1-Minute Expiry:**
-```
-EV = (0.485 × $80) - (0.515 × $100)
-EV = $38.80 - $51.50
-EV = -$12.70 per $100 trade
-Result: NEGATIVE expectancy
-```
-
-**3-Minute Expiry:**
-```
-EV = (0.632 × $80) - (0.368 × $100)
-EV = $50.56 - $36.80
-EV = +$13.76 per $100 trade
-Result: POSITIVE expectancy
-```
-
-**Difference:** $26.46 per trade swing from negative to positive!
-
----
-
 ## 🎲 Why 1-Minute is Essentially Gambling
 
 ### 1. Random Walk Dominance
@@ -269,44 +236,6 @@ Emotion: "That's how it should work!"
 
 ---
 
-## 🏆 The Mathematical Truth
-
-### Kelly Criterion Analysis
-
-**Optimal bet sizing:**
-```
-Kelly % = (Win Rate × (1 + Payout Ratio) - 1) / Payout Ratio
-
-1-Minute (48.5% WR, 80% payout):
-Kelly = (0.485 × 1.8 - 1) / 0.8
-Kelly = (0.873 - 1) / 0.8  
-Kelly = -0.159
-Result: NEGATIVE (shouldn't bet at all!)
-
-3-Minute (63.2% WR, 80% payout):
-Kelly = (0.632 × 1.8 - 1) / 0.8
-Kelly = (1.138 - 1) / 0.8
-Kelly = 0.172
-Result: 17.2% of bankroll (strong positive edge!)
-```
-
-### Sharpe Ratio Comparison
-
-**Risk-adjusted returns:**
-```
-1-Minute Strategy:
-Average Return: -2.5% per 100 trades
-Standard Deviation: 18%
-Sharpe Ratio: -0.139 (terrible)
-
-3-Minute Strategy:
-Average Return: +12.8% per 100 trades
-Standard Deviation: 14%
-Sharpe Ratio: +0.914 (excellent)
-```
-
----
-
 ## ⚡ Speed vs. Accuracy Trade-off
 
 ### The Trading Paradox
@@ -350,24 +279,6 @@ Sharpe Ratio: +0.914 (excellent)
 
 ---
 
-## 📱 Practical Implementation
-
-### The Angel Trader Settings
-
-**For 1-Minute Chart:**
-
-**❌ DON'T USE:**
-```
-InpExpiryCandles = 0  (immediate expiry)
-Result: Gambling, not trading
-```
-
-**✅ USE INSTEAD:**
-```
-InpExpiryCandles = 2  (3-minute expiry on M1)
-Result: Statistical edge, professional trading
-```
-
 ### Why Exactly 3 Minutes?
 
 **Too Short (1-2 minutes):**
@@ -404,26 +315,6 @@ For EURUSD:
 1-Minute average movement: 5-8 pips (INSUFFICIENT)
 3-Minute average movement: 15-25 pips (SUFFICIENT)
 ```
-
----
-
-## 📊 Backtesting Data
-
-### 6-Month Study (Jan-Jun 2024, EURUSD, London Session)
-
-| Metric | 1-Min Expiry | 3-Min Expiry | Difference |
-|--------|--------------|--------------|------------|
-| Total Trades | 3,247 | 1,854 | -42% |
-| Win Rate | 49.2% | 64.8% | +15.6% |
-| Avg. Streak (Win) | 3.2 | 6.7 | +109% |
-| Avg. Streak (Loss) | 5.1 | 2.8 | -45% |
-| Max Drawdown | -38% | -12% | -68% |
-| ROI | -18.4% | +127.3% | +145.7% |
-| Sharpe Ratio | -0.22 | +1.08 | +590% |
-| Profit Factor | 0.87 | 1.94 | +123% |
-
-**Conclusion:** 3-minute expiry outperforms in EVERY metric.
-
 ---
 
 ## 🚨 Warning Signs You're Trading Too Fast
@@ -505,18 +396,6 @@ The 3-minute expiry transforms binary options from a casino game into a legitima
 - Psychological sustainability
 - Professional validation
 
-**The Math Doesn't Lie:**
-- 1-Minute: -12.7% expected value per trade
-- 3-Minute: +13.76% expected value per trade
-
-**That's a 26.46% swing per trade.**
-
-Over 100 trades, that's the difference between:
-- **Losing $1,270** (1-minute)
-- **Winning $1,376** (3-minute)
-
-**Total difference: $2,646 per 100 trades.**
-
 ---
 
 ## 🎖️ The Bottom Line
@@ -530,9 +409,3 @@ Over 100 trades, that's the difference between:
 Anything less is just faster gambling.
 
 ---
-
-**Document Version:** 1.0  
-**Analysis Type:** Statistical & Strategic Comparison  
-**Subject:** Binary Options Expiry Optimization  
-**Evidence Level:** Mathematical Proof + Empirical Data  
-**Recommendation Strength:** STRONG (99% confidence)
