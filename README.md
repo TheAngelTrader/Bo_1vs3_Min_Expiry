@@ -43,6 +43,9 @@
 3-minute expiry (3-candle) on M1 charts provides **significantly better win rates** and **lower risk** compared to 1-minute expiry (1-candle), despite the longer wait time.
 
 </td>
+
+<div align="center">
+
 <td width="50%">
 
 ### 📊 Key Metrics
@@ -54,20 +57,24 @@
 | **Signal Quality** | +100% |
 
 </td>
+</div>
 </tr>
 </table>
 
-<div align="center">
+</div>
 
 ### ⚡ Key Statistics
 
-</div>
 
+<div align="center">
+  
 ```diff
 - 1-Minute Expiry Win Rate: ~45-52% (coin flip territory)
 + 3-Minute Expiry Win Rate: ~58-68% (statistically significant edge)
 ! Risk Reduction: ~40% fewer false signals with 3-minute expiry
 ```
+
+</div>
 
 <details>
 <summary><b>📈 Why This Matters (Click to Expand)</b></summary>
@@ -90,7 +97,6 @@ With the same number of trades and same risk per trade.
 
 ### 🔍 Market Noise vs. Market Trend
 
-</div>
 
 <table>
 <tr>
@@ -181,6 +187,8 @@ Issue: Absorbed noise, captured trend
 <div align="center">
 
 **💡 Key Insight:** The 3-minute expiry gives the market time to "shake out" false moves and establish the true direction.
+
+</div>
 
 </div>
 
