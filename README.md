@@ -1894,26 +1894,6 @@ Found an error or have suggestions for improvement?
 - 📊 Share your own data findings
 - 🔬 Propose methodology improvements
 
----
-
-### 📄 License
-
-<table>
-<tr>
-<td >
-
-**Creative Commons Attribution 4.0 International**
-
-This work is licensed for:
-- ✅ Sharing and distribution
-- ✅ Adaptation and modification
-- ✅ Commercial use
-
-**With attribution required**
-
-</td>
-</tr>
-</table>
 
 ---
 
@@ -1940,8 +1920,6 @@ Special thanks to:
 
 **Made with 📊 data, 🧠 analysis, and ❤️ for the trading community**
 
-
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg?style=for-the-badge)](https://creativecommons.org/licenses/by/4.0/)
 [![Research](https://img.shields.io/badge/Research-Based-blue?style=for-the-badge)](https://shields.io/)
 [![Educational](https://img.shields.io/badge/Purpose-Educational-green?style=for-the-badge)](https://shields.io/)
 
