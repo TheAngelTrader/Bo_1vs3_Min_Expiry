@@ -1780,7 +1780,7 @@ Step 5: Watch your win rate climb
 
 ### 👤 Author
 
-**The Angel Tarder **  
+**The Angel Tarder**  
 *Professional Binary Options Strategy Developer*
 
 ---
